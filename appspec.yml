@@ -2,15 +2,8 @@ version: 0.0
 
 os: linux
 files:
--source: /
-destination: /home/ec2-user/app
-permissions:
-   - object: /home/ec2-user/app
-     pattern: "**"
-     owner: ec2-user
-     mode: 755
-     type:
-       - directory
+-source: ./app.js
+destination: /home/ec2-user/app.js
 hooks:
 BeforeInstall:
 AfterInstall:
