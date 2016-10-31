@@ -4,6 +4,13 @@ os: linux
 files:
 -source: ./app.js
 destination: /home/ec2-user/app.js
+permissions:
+  - object: /home/ec2-user/app.js
+    pattern: "*"
+    owner: ec2-user
+    mode: 755
+    type:
+      - file
 hooks:
 BeforeInstall:
 AfterInstall:
