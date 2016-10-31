@@ -1,0 +1,10 @@
+version: 0.1
+
+os: linux
+files:
+	- source: /app.js
+	destination /home/ec2-user/
+
+hooks:
+	BeforeInstall:
+	AfterInstall:
