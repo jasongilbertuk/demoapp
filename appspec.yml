@@ -6,5 +6,5 @@ files:
 destination: /home/ec2-user/
 
 hooks:
-	BeforeInstall:
-	AfterInstall:
+BeforeInstall:
+AfterInstall:
