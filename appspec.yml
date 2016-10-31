@@ -2,7 +2,7 @@ version: 0.0
 
 os: linux
 files:
-+source: ./app.js
++source: ./deployment-archive/app.js
 destination: /home/ec2-user/app.js
 hooks:
 BeforeInstall:
