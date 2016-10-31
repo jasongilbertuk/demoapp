@@ -2,6 +2,7 @@ os: linux
 files:
   - source: /
     destination: /home/ec2-user/myapp
+    
 permissions:
 - object: /
    pattern: "**"
