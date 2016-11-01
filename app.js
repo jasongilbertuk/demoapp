@@ -2,7 +2,9 @@ var http=require('http');
 
 function onRequest(req,res)
 {
-	res.end("Hello There");
+	res.writeHead(200, {'Content-Type': 'text/plain'});
+  	res.write('hello BON')
+  	res.end();
 }
 
 var server = http.createServer(onRequest);
