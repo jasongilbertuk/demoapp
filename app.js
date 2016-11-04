@@ -3,8 +3,8 @@ var instance = require('ec2-instance-data');
 
 function onRequest(req,res)
 {
-	res.writeHead(200, {'Content-Type': 'text/plain'});
-  	res.write('hello BON')
+	res.writeHead(200, {'Content-Type': 'text/html'});
+  	res.write('<h1>hello BON</h1>')
   	res.end();
 }
 
